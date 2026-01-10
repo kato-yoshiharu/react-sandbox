@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      react-hook-form:
+        specifier: ^7.70.0
+        version: 7.70.0(react@18.2.0)
       styled-components:
         specifier: ^6.1.6
         version: 6.1.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9473,6 +9476,12 @@ packages:
     resolution: {integrity: sha512-BLhukwJ+Z92Nmdcs+EMw6dy1Z/VLiJTzEQACDUEnWMClhYnFykJCGWQx+NmwP/qQHGX/5CzQ+TGi8ofg2+HzVQ==}
     peerDependencies:
       react: '>=16.8.6'
+
+  react-hook-form@7.70.0:
+    resolution: {integrity: sha512-COOMajS4FI3Wuwrs3GPpi/Jeef/5W1DRR84Yl5/ShlT3dKVFUfoGiEZ/QE6Uw8P4T2/CLJdcTVYKvWBMQTEpvw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -23589,6 +23598,10 @@ snapshots:
   react-feather@2.0.10(react@18.2.0):
     dependencies:
       prop-types: 15.8.1
+      react: 18.2.0
+
+  react-hook-form@7.70.0(react@18.2.0):
+    dependencies:
       react: 18.2.0
 
   react-is@16.13.1: {}

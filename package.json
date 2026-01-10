@@ -33,6 +33,7 @@
     "pub:lib": "pnpm build:lib && pnpm publish"
   },
   "dependencies": {
+    "react-hook-form": "^7.70.0",
     "styled-components": "^6.1.6"
   },
   "devDependencies": {
