@@ -4,7 +4,7 @@
 
 This repository is my React sandbox, featuring both React components and experiments with React's APIs and ecosystem.
 
-Storybook URL: <http://react-sandbox-storybook.s3-website-ap-northeast-1.amazonaws.com/main>
+Storybook URL: <https://kato-yoshiharu.github.io/react-sandbox>
 
 ## Running Locally
 
@@ -18,7 +18,6 @@ pnpm storybook
 ## Main Products
 
 - [WeeklyCalendar](src/components/ui-components/WeeklyCalendar)
-- [WasmMarkdownEditor](wasm/src/wasm_markdown_editor)
 
 ## License
 
