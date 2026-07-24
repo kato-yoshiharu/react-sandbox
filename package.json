@@ -5,6 +5,7 @@
   "keywords": [],
   "license": "MIT",
   "author": "suimenkathemove",
+  "packageManager": "pnpm@8.15.9",
   "files": [
     "dist"
   ],
@@ -61,7 +62,7 @@
     "@suimenkathemove/prettier-config": "^0.1.4",
     "@suimenkathemove/stylelint-config": "^0.1.4",
     "@suimenkathemove/tsconfig": "^0.1.17",
-    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/jest-dom": "6.2.0",
     "@testing-library/react": "^14.1.2",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/user-event": "^14.5.2",
