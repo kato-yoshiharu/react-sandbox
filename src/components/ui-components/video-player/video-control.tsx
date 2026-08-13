@@ -5,8 +5,8 @@ import { CurrentTimeSlider } from './current-time-slider';
 
 const SubContainer = styled.div`
   display: flex;
-  align-items: center;
   gap: 12px;
+  align-items: center;
   height: 48px;
 `;
 

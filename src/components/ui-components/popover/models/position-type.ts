@@ -17,5 +17,4 @@ type CornerPositionType<T extends PositionTypeUnit> = T extends PositionTypeUnit
   : never;
 
 export type PositionType =
-  | PositionTypeUnit
-  | CornerPositionType<PositionTypeUnit>;
+  PositionTypeUnit | CornerPositionType<PositionTypeUnit>;

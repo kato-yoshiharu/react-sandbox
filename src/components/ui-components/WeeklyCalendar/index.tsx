@@ -14,12 +14,7 @@ import { splitDateRange } from '@/utils/date/splitDateRange';
 import { range } from '@/utils/range';
 
 export type Mode =
-  | 'normal'
-  | 'resizeNew'
-  | 'resizeStart'
-  | 'resizeEnd'
-  | 'moveOrEdit'
-  | 'move';
+  'normal' | 'resizeNew' | 'resizeStart' | 'resizeEnd' | 'moveOrEdit' | 'move';
 
 type Props = {
   events: Event[];

@@ -5,5 +5,5 @@
     "emitDeclarationOnly": true,
     "outDir": "./dist"
   },
-  "include": ["src/index.ts"]
+  "include": ["src/entry.lib.ts"]
 }

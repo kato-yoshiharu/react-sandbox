@@ -5,7 +5,7 @@ const path = require('path');
 const { build } = require('esbuild');
 
 void build({
-  entryPoints: [path.resolve(__dirname, '../src/index.ts')],
+  entryPoints: [path.resolve(__dirname, '../src/entry.lib.ts')],
   bundle: true,
   outfile: 'dist/index.js',
   platform: 'browser',

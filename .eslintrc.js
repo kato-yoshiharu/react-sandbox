@@ -14,5 +14,5 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['wasm'],
+  ignorePatterns: ['wasm', 'dist'],
 };

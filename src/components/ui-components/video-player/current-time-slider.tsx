@@ -7,8 +7,8 @@ const Track = styled.div`
   position: relative;
   width: 100%;
   height: 4px;
-  background-color: white;
   cursor: pointer;
+  background-color: white;
 `;
 
 const Fill = styled.div<{ value: number }>`
@@ -21,11 +21,11 @@ const Thumb = styled.div<{ value: number }>`
   position: absolute;
   top: 50%;
   left: ${(props) => props.value}%;
-  transform: translate(-50%, -50%);
   width: 12px;
   height: 12px;
   background-color: red;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 type CurrentTimeSliderProps = {

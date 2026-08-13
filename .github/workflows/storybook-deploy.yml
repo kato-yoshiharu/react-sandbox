@@ -1,10 +1,7 @@
-# TODO: refactor
 name: storybook deploy
 
+# MEMO: storybook-pages.yml でデプロイするようにしたので、この workflow は不要になった
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:

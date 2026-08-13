@@ -30,7 +30,7 @@
     "cy:sb:open": "cypress open -C cypress.storybook.json",
     "cy:sb:run": "cypress run --headless -C cypress.storybook.json",
     "test:playwright": "playwright test --ui",
-    "build:lib": "rm -rf dist && ts-node bin/build.ts && dts-bundle-generator -o dist/index.d.ts src/index.ts --project tsconfig.build.json",
+    "build:lib": "rm -rf dist && ts-node bin/build.ts && dts-bundle-generator -o dist/index.d.ts src/entry.lib.ts --project tsconfig.build.json",
     "pub:lib": "pnpm build:lib && pnpm publish"
   },
   "dependencies": {
