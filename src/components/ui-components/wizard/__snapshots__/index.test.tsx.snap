@@ -4,7 +4,7 @@ exports[`Wizard render 1`] = `
 <DocumentFragment>
   <div>
     <progress
-      class="sc-bcXGCL lhwWcS"
+      class="sc-bcHNtg eGoCRA"
       max="23"
       value="0"
     />

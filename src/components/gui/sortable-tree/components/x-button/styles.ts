@@ -10,7 +10,7 @@ export const Button = styled.button`
 
   &:hover {
     /* stylelint-disable-next-line */
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgb(0 0 0 / 5%);
 
     svg {
       fill: #6f7b88;

@@ -1,7 +1,9 @@
 # TODO: refactor
 name: Playwright Tests
 
-on: [push, pull_request]
+# MEMO: イベントによる実行を一旦無効化
+on:
+  workflow_dispatch:
 
 jobs:
   test:

@@ -14,10 +14,10 @@ const Container = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 400px;
   height: 300px;
   background-color: white;
+  transform: translate(-50%, -50%);
 `;
 
 export type ConfirmDialogOption = {

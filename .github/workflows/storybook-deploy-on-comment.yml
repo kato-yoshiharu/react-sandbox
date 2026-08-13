@@ -1,9 +1,8 @@
-# TODO: refactor
 name: storybook deploy on comment
 
+# MEMO: storybook-pages.yml でデプロイするようにしたので、この workflow は不要になった
 on:
-  issue_comment:
-    types: [created]
+  workflow_dispatch:
 
 jobs:
   deploy-storybook-on-comment:
