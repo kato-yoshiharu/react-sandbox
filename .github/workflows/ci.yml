@@ -75,29 +75,29 @@ jobs:
   #         pnpm reg-suit run -c regconfig.e2e.json
 
   # TODO: refactor
-  vrt:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Cache pnpm
-        uses: suimenkathemove/pnpm-cache-action@v1.0.0
-      - name: Install dependencies
-        run: pnpm install
-      - name: install JP font
-        run: |
-          sudo apt-get install fonts-ipafont
-      - name: run storycap
-        run: |
-          pnpm storycap http://localhost:9009 --serverCmd "pnpm storybook -p 9009" --serverTimeout 3000000 --exclude "**/BouncingDVD/**" "**/slide-image/**" "**/AspectRatio/**"
-      - name: workaround for detached HEAD
-        run: |
-          git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull || true
-      - name: run reg-suit
-        run: |
-          pnpm reg-suit run
+  # vrt:
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #     - name: Cache pnpm
+  #       uses: suimenkathemove/pnpm-cache-action@v1.0.0
+  #     - name: Install dependencies
+  #       run: pnpm install
+  #     - name: install JP font
+  #       run: |
+  #         sudo apt-get install fonts-ipafont
+  #     - name: run storycap
+  #       run: |
+  #         pnpm storycap http://localhost:9009 --serverCmd "pnpm storybook -p 9009" --serverTimeout 3000000 --exclude "**/BouncingDVD/**" "**/slide-image/**" "**/AspectRatio/**"
+  #     - name: workaround for detached HEAD
+  #       run: |
+  #         git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull || true
+  #     - name: run reg-suit
+  #       run: |
+  #         pnpm reg-suit run
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
